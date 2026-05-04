@@ -6,7 +6,7 @@ This application features a dual-role interface, allowing **Buyers** to browse a
 
 ---
 
-## 🚀 Features Implemented (MVP)
+## Features Implemented (MVP)
 
 The current iteration of the application is a robust frontend showcase built to demonstrate the core workflow, UI/UX, and application state management.
 
@@ -29,27 +29,37 @@ The current iteration of the application is a robust frontend showcase built to 
 
 ---
 
-## 🚧 Roadmap: Transitioning to Production
+## Roadmap: Transitioning to Production
 
-The frontend foundation is complete. We are currently preparing to integrate the "heavy" backend architecture to transition this from a frontend showcase into a real-world, multi-vendor application.
+The frontend foundation is complete. We are currently preparing to integrate the heavy backend architecture to transition this from a frontend showcase into a real-world, multi-vendor application.
 
 ### Upcoming Features:
+
 1. **Authentication & Authorization (Supabase Auth)**
    * Secure email/password login.
    * Role-Based Access Control (RBAC) to ensure Admins and Buyers are routed correctly upon login.
+
 2. **Database Integration (Supabase PostgreSQL)**
    * Moving from local memory to a cloud database.
    * **Multi-Vendor Architecture:** Ensuring that when an Admin logs in, they only see items they uploaded and inquiries sent directly to them.
+
 3. **Admin Profiles & Settings**
    * Business profiles, logos, and verification badges for sellers.
+
 4. **Real-Time Data (Supabase Realtime)**
    * Push notifications and instant dashboard updates when a buyer makes an inquiry.
+
 5. **Advanced Uploads**
    * Multi-image carousels (3-5 images per item) and draft saving.
 
+6. **Security Implementations**
+   * **Environment Variables (.env):** Strict hiding of sensitive backend API keys from the public repository.
+   * **Secure Token Storage:** Safely encrypting authentication sessions locally on the device (avoiding plain-text storage).
+   * **Database Security (Supabase RLS):** Implementing Row Level Security to strictly control and restrict data access directly at the database level, preventing unauthorized access.
+
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Framework:** [React Native](https://reactnative.dev/) (via [Expo](https://expo.dev/))
 * **Navigation:** React Navigation (`native-stack`, `bottom-tabs`)
 * **State Management:** React Context API
@@ -58,7 +68,7 @@ The frontend foundation is complete. We are currently preparing to integrate the
 
 ---
 
-## 💻 Running the App Locally
+## Running the App Locally
 
 1. Clone the repository.
 2. Install dependencies:
